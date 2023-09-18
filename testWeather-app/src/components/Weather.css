@@ -12,3 +12,22 @@
     gap: 14px;
     padding-top: 60px;
 }
+.top-bar input{
+    display: flex;
+    width: 300px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    background: #fff;   
+    font-size: 15px;
+}
+
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
