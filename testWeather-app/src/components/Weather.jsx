@@ -14,7 +14,9 @@ const Weather = () => {
         <div className='container'>
             <div className='top-bar'>
                 <input type="text" className='cityInput' placeholder='Search...'/>
-                <div className='search-icon'></div>
+                <div className='search-icon'>
+                    <img src={search_icon} alt="" />
+                </div>
             </div>
         </div>
        </>
