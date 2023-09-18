@@ -9,6 +9,9 @@ import snow_icon from '../components/assets/snow.png'
 import wind_icon from '../components/assets/wind.png'
 
 const Weather = () => {
+
+    let api_key = "1017b0d8ddc253536421c752d8f3bd1b";
+
     return (
        <>
         <div className='container'>
@@ -21,7 +24,7 @@ const Weather = () => {
             <div className='weather-img'>
                 <img src={cloud_icon} alt="" />
             </div>
-            <div className='weather-tmp'>10<sup>o</sup>C</div>
+            <div className='weather-tmp'>10<sup>o</sup>c</div>
             <div className='weather-location'>Phnom Penh</div>
             <div className='data-container'>
                 <div className='element'>
