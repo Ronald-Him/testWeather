@@ -1,4 +1,5 @@
 import './Weather.css'
+import React from 'react'
 import search_icon from '../components/assets/search.png'
 import clear_icon from '../components/assets/clear.png'
 import cloud_icon from '../components/assets/cloud.png'
@@ -11,12 +12,25 @@ import wind_icon from '../components/assets/wind.png'
 const Weather = () => {
 
     let api_key = "1017b0d8ddc253536421c752d8f3bd1b";
-    const search = () => {
+    const search = async() => {
         const element = document.getElementsByClassName("cityInput")
         if(element[0].value===""){
             return 0;
         }
-        let url = `https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}&appid=${api_key}`
+        let url = `https://api.openweathermap.org/data/2.5/weather?q=${element[0].value}&appid=${api_key}`;
+
+        let response = await fetch(url);
+        let data = await response.json();
+        const humidity = document.getElementsByClassName("humidnity-percent");
+        const wind = document.getElementsByClassName("wind-speed");
+        const temperature = document.getElementsByClassName("weather-tmp");
+        const location = document.getElementsByClassName("weather-location");
+
+        
+
+
+
+
     }
 
 
